@@ -125,8 +125,8 @@ background: #4EC5F7;
 
 }
 .banner-img img{
-width: 634.833px;
-height: 650px;
+max-width: 634.833px;
+max-height: 650px;
 flex-shrink: 0;
 }
 .banner{
@@ -308,4 +308,30 @@ max-height: 636px;
  margin: auto;
  gap: 30px ;
 
+}
+@media screen and (max-width: 576px) {
+    .navbar, .banner, .box, .card, .section{
+         flex-direction: column;
+         text-align: center;
+        padding: 0px;
+        justify-content: flex-end;
+         align-items: center;
+         margin:20px  auto;
+    }
+    .banner-img, .box, .info, .card, .image{
+        width: 100%;
+        
+        
+    }
+    .banner-img img{
+        width: 100%;
+        margin: auto;
+    }
+    .banner-info{
+        width: 100%;
+    }
+    
+    .card{
+        height: 100%;
+    }
 }
