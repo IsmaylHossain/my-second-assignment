@@ -310,16 +310,16 @@ max-height: 636px;
 
 }
 @media screen and (max-width: 576px) {
-    .navbar, .banner, .box, .card, .section{
+    .navbar, .banner, .card, .section,ul {
          flex-direction: column;
          text-align: center;
         padding: 0px;
-        justify-content: flex-end;
+        
          align-items: center;
          margin:20px  auto;
     }
-    .banner-img, .box, .info, .card, .image{
-        width: 100%;
+    .banner-img, .box,   .card-item, .image{
+        width: 85%;
         
         
     }
@@ -334,4 +334,95 @@ max-height: 636px;
     .card{
         height: 100%;
     }
+    .section{
+        height: 100%;
+        flex-direction: column;
+    }
+    .section .info{
+         width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    .img-1{
+        width: 80%;
+         height: inherit;
+    }
+    .img-2{
+        width: 90px;
+        display:
+    }
+    .box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+    }
+    .box-item{
+        width: 160px;
+        height: 80px;
+        margin-bottom: 10px;
+        padding: 1px;
+    }
+    .footer > .nav-icon{
+        width: 30px;
+        margin-left: 115px;
+        padding-top: 2px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .navbar, .banner, .card, .section,ul {
+        flex-direction: column;
+        text-align: center;
+       padding: 0px;
+       
+        align-items: center;
+        margin:20px  auto;
+   }
+   .banner-img, .box,   .card-item, .image{
+       width: 80%;
+       
+       
+   }
+   .banner-img img{
+       width: 70%;
+       margin: auto;
+   }
+   .banner-info{
+       width: 80%;
+   }
+   
+   .card{
+       height: 80%;
+   }
+   .section{
+       height: 80%;
+       flex-direction: column;
+   }
+   .section .info{
+        width: 80%;
+       text-align: center;
+       margin: auto;
+   }
+   .img-1{
+       width: 80%;
+        height: inherit;
+   }
+   .img-2{
+       width: 80px;
+       display:
+   }
+   .box{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       width: 80%;
+       margin: auto;
+   }
+   .box-item{
+       width: 160px;
+       height: 80px;
+       margin-bottom: 10px;
+       padding: 1px;
+   }
+    
 }
